@@ -27,24 +27,35 @@ orbit = Song.new("Orbit", nao, mix_3)
 drive = Song.new("Drive/Disconnect", nao, mix_3)
 let_you = Song.new("Let You Down", charlotte, mix_3)
 mountain = Song.new("Mountain", charlotte, mix_3)
+funeral = Song.new("Funeral", charlotte, mix_1)
 chances = Song.new("Chances", kaytranada, mix_3)
 together = Song.new("Together", kaytranada, mix_2)
 
-puts "Artist knows his name"
-puts kaleo.name == "Kaleo"
+# puts "Artist knows his name"
+# puts kaleo.name == "Kaleo"
 
-puts "Mixtape knows its name"
-puts mix_2.name == "No Scrubs"
-puts mix_3.theme == "Dark R&B"
+# puts "Mixtape knows its name"
+# puts mix_2.name == "No Scrubs"
+# puts mix_3.theme == "Dark R&B"
 
-puts "Song knows its name, artist and mixtape"
-puts mykonos.title == "Mykonos" 
-puts creep.artist == tlc
-puts drive.mixtape == mix_3
+# puts "Song knows its name, artist and mixtape"
+# puts mykonos.title == "Mykonos" 
+# puts creep.artist == tlc
+# puts drive.mixtape == mix_3
 
-puts "Song class knows all the songs"
-puts Song.all.include?(mountain)
-puts Song.all.include?(let_you)
+# puts "Song class knows all the songs"
+# puts Song.all.include?(mountain)
+# puts Song.all.include?(let_you)
 
-puts Mixtape.mixtapesongs(mix_1)
+# puts "Mixtape returns an array of songs specific to the mixtape"
+
+# p mix_2.mixtapeartists
+
+# puts "Artist knows its songs"
+# puts charlotte.songs.include?(funeral)
+
+# puts "Artist knows its mixtapes"
+#  p tlc.mixtapes
+ p kaytranada.themes
+
 #binding.pry

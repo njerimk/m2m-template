@@ -14,11 +14,21 @@ class Mixtape
         @@all
     end
 
-    def self.mixtapesongs(mixtape)
-        x = Song.all.select do |each_song| each_song.mixtape == mixtape 
-        #binding.pry
+    def songs
+        Song.all.select do |each_song| each_song.mixtape == self
         end
+        #returns array of all song objects
+    end
+
+    def mixtapesongs
+        self.songs.map do |each_song| each_song.title
         #array of songs on a specific mixtape
+        end
+    end
+
+    def mixtapeartists
+        self.songs.map do |each_song| each_song.artist.name
+        end
     end
 
 end
