@@ -11,7 +11,11 @@ class Membership
 
     def self.all
         @@all
-    end 
+    end
+
+  
+    
+    
 
     
 
