@@ -1,61 +1,33 @@
+
 require_relative '../config/environment.rb'
+require 'pry'
+#Students
+legoshi = Student.new("Legoshi", "gray wolf", "10th Grade")
+haru = Student.new("Haru", "white dwarf rabbit", "11th Grade")
+louis = Student.new("Louis", "red deer", "11th Grade")
+juno = Student.new("Juno", "gray wolf", "9th Grade")
+jack = Student.new("Jack", "labrador retriever", "10th Grade")
+bill = Student.new("Bill", "bengal tiger", "10th Grade")
+collot = Student.new("Collot", "sheep dog", "10th Grade")
+sanu = Student.new("Sanu", "pelican", "10th Grade")
 
-# create test data/variables here
-#Artist Class
-kaleo = Artist.new("Kaleo")
-fleet_foxes = Artist.new("Fleet Foxes")
-tlc = Artist.new("TLC")
-britney_spears = Artist.new("Britney Spears")
-nao = Artist.new("Nao")
-charlotte = Artist.new("Charlotte Wilson")
-kaytranada = Artist.new("Kaytranada")
 
-#Mixtape Class
-mix_1 = Mixtape.new("Folk You", "Indie/Folk")
-mix_2 = Mixtape.new("No Scrubs", "Pop/90s")
-mix_3  = Mixtape.new("Galaxy Tears", "Dark R&B")
 
-#Song Class
-way_down = Song.new("Way Down We Go", kaleo, mix_1)
-save_yourself = Song.new("Save Yourself", kaleo, mix_1)
-mykonos = Song.new("Mykonos", fleet_foxes, mix_1)
-montezuma = Song.new("Montezuma", fleet_foxes, mix_1)
-unpretty = Song.new("Unpretty", tlc, mix_3)
-lucky = Song.new("Lucky", britney_spears, mix_2)
-creep = Song.new("Creep", tlc, mix_2)
-orbit = Song.new("Orbit", nao, mix_3)
-drive = Song.new("Drive/Disconnect", nao, mix_3)
-let_you = Song.new("Let You Down", charlotte, mix_3)
-mountain = Song.new("Mountain", charlotte, mix_3)
-funeral = Song.new("Funeral", charlotte, mix_1)
-chances = Song.new("Chances", kaytranada, mix_3)
-together = Song.new("Together", kaytranada, mix_2)
 
-# puts "Artist knows his name"
-# puts kaleo.name == "Kaleo"
+#Club
+drama_club = Club.new("Drama Club")
+sports_club = Club.new("Sports Club")
+gardening_club = Club.new("Gardening Club")
 
-# puts "Mixtape knows its name"
-# puts mix_2.name == "No Scrubs"
-# puts mix_3.theme == "Dark R&B"
+#Membership
+puts member1 = Membership.new(legoshi,drama_club)
+puts louis.new_membership(drama_club)
+puts legoshi.new_membership(gardening_club)
 
-# puts "Song knows its name, artist and mixtape"
-# puts mykonos.title == "Mykonos" 
-# puts creep.artist == tlc
-# puts drive.mixtape == mix_3
+binding.pry
+puts "hello"
 
-# puts "Song class knows all the songs"
-# puts Song.all.include?(mountain)
-# puts Song.all.include?(let_you)
 
-# puts "Mixtape returns an array of songs specific to the mixtape"
 
-# p mix_2.mixtapeartists
 
-# puts "Artist knows its songs"
-# puts charlotte.songs.include?(funeral)
 
-# puts "Artist knows its mixtapes"
-#  p tlc.mixtapes
- p kaytranada.themes
-
-#binding.pry
